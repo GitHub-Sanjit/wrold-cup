@@ -47,8 +47,11 @@
   line-height: 23px;
   text-align: center;
   color: #ffffff;
-  /* width: 103px;
-  height: 23px; */
+  transition: background 1s ease-in-out;
+}
+
+button:hover {
+  background-color: #4d0101;
 }
 
 button .fa-chevron-right {
@@ -56,8 +59,22 @@ button .fa-chevron-right {
   height: 24px;
   margin-left: 15px;
 }
+
 .header-img {
   width: 50%;
+}
+
+/* .elipsis {
+  height: 50px;
+  width: 400px;
+  border: 1px solid rebeccapurple;
+} */
+
+.elipsis-text {
+  white-space: nowrap;
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header-img img {
