@@ -62,3 +62,36 @@ button .fa-chevron-right {
   left: 801px;
   top: 83px;
 }
+
+footer {
+  width: 100vw;
+  height: 444px;
+  left: 0px;
+  top: 2090px;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h1 {
+  color: white;
+}
+
+footer hr {
+  border: 1px solid gray;
+  width: 85%;
+  margin: 35px 0 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a7a3a3;
+  margin: 25px;
+}
+
+.social-media {
+  font-size: 25px;
+  margin-top: 50px;
+}
