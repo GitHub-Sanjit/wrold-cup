@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background: #161616;
   border-radius: 30px;
@@ -63,9 +68,106 @@ button .fa-chevron-right {
   top: 83px;
 }
 
+.main {
+  width: 1200px;
+  margin: 150px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+.nav-items {
+  background-color: black;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  margin: 0 30px 0 30px;
+  padding: 20px;
+  background-color: white;
+  color: #2d2c2c;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.nav-item:nth-of-type(3) {
+  background-color: #dd0000;
+  color: white;
+}
+
+.blog-items {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.blog-item {
+  width: 280px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-img img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.blog-content {
+  margin: 10px;
+}
+
+.blog-content button {
+  width: 100px;
+  height: 32px;
+}
+
+.blog-content p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b4a4a;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: gray;
+}
+
+.icons img {
+  margin-right: 10px;
+}
+
+.time-icon {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-self: center;
+}
+
+.chat-icon {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  justify-self: center;
+}
+
 footer {
-  width: 100vw;
+  width: 100%;
   height: 444px;
+  margin: 0;
   left: 0px;
   top: 2090px;
   background: #161616;
