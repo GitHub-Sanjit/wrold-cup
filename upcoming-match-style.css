@@ -60,11 +60,6 @@ button .fa-chevron-right {
 }
 
 .header button {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
-.header button {
   animation-duration: 4s;
   animation-delay: 2s;
   animation-iteration-count: infinite;

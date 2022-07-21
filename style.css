@@ -230,3 +230,68 @@ footer a {
   font-size: 25px;
   margin-top: 50px;
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    background: #161616;
+    border-radius: 30px;
+    color: white;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 20px auto;
+  }
+  .header-text {
+    padding: 45px;
+  }
+
+  .header-text h1 {
+    font-weight: 600;
+    line-height: 45px;
+    font-size: 40px;
+  }
+  .elipsis-text {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header-img {
+    align-items: center;
+  }
+  .header-img img {
+    width: 250px;
+    height: 40vh;
+    margin: 50px 0;
+    right: 85px;
+    top: 83px;
+  }
+  .main {
+  width: 700px;
+  margin:150px 0;
+  display: grid;
+  grid-gap: 10pxpx;
+  grid-template-rows: repeat(2, 1fr auto);
+}
+  .nav-items {
+    margin: 0 10px;
+    height: 50px;
+    color: black;
+    background-color: white;
+  }
+  .nav-item {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .blog-items {
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+  }
+  footer a {
+    margin: 10px;
+  }
+}
