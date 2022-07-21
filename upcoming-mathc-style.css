@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/*----------------------------- banner section styles ------------------------ */
+/*-- banner section styles -- */
 
 .banner {
   display: flex;
@@ -38,7 +38,7 @@
   padding-right: 20px;
 }
 
- /*------------------------------ button animation----------------------------- */
+ /*-- button animation -- */
 
 .glow-on-hover {
   font-weight: 400;
@@ -115,7 +115,7 @@
   height: 100%;
 }
 
-/* ----------------------blog section style ---------------------------------- */
+/* -- blog section style -- */
 
 .blogs {
   display: flex;
@@ -206,7 +206,7 @@ nav li:hover a {
 }
 
 
-/*----------------------------------- footer --------------------------- */
+/*-- footer -- */
 
 footer {
   margin-top: 100px;
@@ -250,7 +250,7 @@ footer a {
   margin: 0px 20px;
 }
 
-/*---------------------------- tablet responsive ---------------------------- */
+/*-- tablet responsive -- */
 
 @media screen and (min-width:577px) and (max-width:768px) {
   .banner {
@@ -385,11 +385,11 @@ footer a {
   }
 }
 
-/*----------------------------- mobile responsive --------------------------- */
+/*-- mobile responsive -- */
 
 @media screen and (max-width:576px) {
 
-  /*--------------------------- banner section -------------------------------- */
+  /*-- banner section -- */
 
   header {
     margin: 30px;
@@ -429,7 +429,7 @@ footer a {
     object-fit: contain;
   }
 
-  /*-------------------------- blog section ---------------------------------- */
+  /*-- blog section -- */
 
   .blogs {
     display: flex;
@@ -499,7 +499,7 @@ footer a {
 }
 
 
-/*-------------------- medium divece responsiveness -------------------------- */
+/*-- medium divece responsiveness -- */
 
 @media screen and (min-width:769px) and (max-width:992px){
 
@@ -552,7 +552,7 @@ footer a {
     bottom: 0px;
   }
 
-  /* -----------------------------blog section ------------------------------- */
+  /* --blog section -- */
 
   aside {
     width: 100%;
@@ -657,7 +657,7 @@ footer a {
   }
 }
 
-/*-------------------- Extra large device responsiveness---------------------- */
+/*-- Extra large device responsiveness -- */
 
 @media screen and (min-width:993px) and (max-width:1200px){
   .banner{

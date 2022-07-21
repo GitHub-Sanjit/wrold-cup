@@ -2,10 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-/*----------------------------- banner section styles ------------------------ */
+/*-- banner section styles -- */
 
 .banner {
   display: flex;
@@ -16,7 +16,7 @@
   border-radius: 30px;
 }
 
-.banner>div {
+.banner > div {
   width: 50%;
 }
 
@@ -33,12 +33,13 @@
 }
 
 .banner-text p {
+  /* width: 200px; */
   font-weight: 300;
   font-size: 16px;
   padding-right: 20px;
 }
 
- /*------------------------------ button animation----------------------------- */
+/*-- button animation -- */
 
 .glow-on-hover {
   font-weight: 400;
@@ -57,11 +58,22 @@
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -69,7 +81,7 @@
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
@@ -87,20 +99,26 @@
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #DD0000;
+  background-color: #dd0000;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .banner-img {
@@ -115,7 +133,7 @@
   height: 100%;
 }
 
-/* ----------------------blog section style ---------------------------------- */
+/* -- blog section style -- */
 
 .blogs {
   margin-top: 100px;
@@ -158,7 +176,7 @@ nav li:hover a {
 }
 
 .default {
-  background-color: #DD0000;
+  background-color: #dd0000;
 }
 
 .default a {
@@ -179,7 +197,7 @@ nav li:hover a {
   border-radius: 12px;
 }
 
-.card>div {
+.card > div {
   height: 50%;
 }
 
@@ -214,10 +232,10 @@ nav li:hover a {
   margin-bottom: 20px;
   justify-content: space-between;
   font-size: 16px;
-  color: #161616B2;
+  color: #161616b2;
 }
 
-.button-container{
+.button-container {
   display: none;
   text-align: center;
   margin-top: 50px;
@@ -226,7 +244,7 @@ nav li:hover a {
 .bottom-btn {
   width: 131px;
   height: 47px;
-  background-color: #DD0000;
+  background-color: #dd0000;
   border: none;
   font-weight: 400;
   font-size: 20px;
@@ -235,7 +253,7 @@ nav li:hover a {
   border-radius: 5px;
 }
 
-/*----------------------------------- footer --------------------------- */
+/*--  footer -- */
 
 footer {
   margin-top: 100px;
@@ -279,11 +297,10 @@ footer a {
   margin: 0px 20px;
 }
 
-/*---------------------------- tablet responsive ---------------------------- */
+/*-- tablet responsive -- */
 
-@media screen and (min-width:577px) and (max-width:768px) {
-
-  /* -------------------------banner section ---------------------------------- */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* --banner section -- */
   .banner {
     height: 400px;
     margin: 45px;
@@ -333,7 +350,7 @@ footer a {
     bottom: 0px;
   }
 
-  /* -----------------------------blog section ------------------------------- */
+  /* --blog section -- */
 
   aside {
     width: 100%;
@@ -413,7 +430,7 @@ footer a {
     width: 131px;
     height: 47px;
     border: none;
-    background-color: #DD0000;
+    background-color: #dd0000;
     border-radius: 5px;
     color: white;
     font-weight: 400;
@@ -421,7 +438,7 @@ footer a {
     line-height: 23px;
   }
 
-  .button-container{
+  .button-container {
     display: block;
   }
 
@@ -438,12 +455,10 @@ footer a {
   }
 }
 
+/* -- mobile responsive --*/
 
-/* ----------------------------- mobile responsive ----------------------------*/
-
-@media screen and (max-width:576px) {
- 
-/*--------------------------- banner section -------------------------------- */
+@media screen and (max-width: 576px) {
+  /*-- banner section -- */
 
   header {
     margin: 30px;
@@ -493,7 +508,7 @@ footer a {
     object-fit: contain;
   }
 
-  /*-------------------------- blog section ---------------------------------- */
+  /*-- blog section -- */
 
   .blogs {
     display: flex;
@@ -558,15 +573,12 @@ footer a {
   .links a {
     display: inline-block;
     padding: 20px 100px;
-  }  
-  
-} 
+  }
+}
 
+/*-- medium divece responsiveness -- */
 
-/*-------------------- medium divece responsiveness -------------------------- */
-
-@media screen and (min-width:769px) and (max-width:992px){
-
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .banner {
     width: auto;
     height: 550px;
@@ -577,7 +589,6 @@ footer a {
     width: auto;
     color: white;
     margin: 90px 0px 90px 80px;
-    
   }
 
   .banner-text h1 {
@@ -616,7 +627,7 @@ footer a {
     bottom: 0px;
   }
 
-  /* -----------------------------blog section ------------------------------- */
+  /* -- blog section -- */
 
   aside {
     width: 100%;
@@ -696,7 +707,7 @@ footer a {
     width: 131px;
     height: 47px;
     border: none;
-    background-color: #DD0000;
+    background-color: #dd0000;
     border-radius: 5px;
     color: white;
     font-weight: 400;
@@ -704,7 +715,7 @@ footer a {
     line-height: 23px;
   }
 
-  .button-container{
+  .button-container {
     display: block;
   }
 
@@ -721,19 +732,19 @@ footer a {
   }
 }
 
-/*-------------------- Extra large device responsiveness---------------------- */
+/*-- Extra large device responsiveness -- */
 
-@media screen and (min-width:993px) and (max-width:1200px){
-  .banner{
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .banner {
     width: auto;
     height: 550px;
   }
 
-  .banner-text{
+  .banner-text {
     margin: 90px 0px 90px 80px;
   }
 
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 3.4em;
   }
 
@@ -807,12 +818,11 @@ footer a {
     font-size: 0.9rem;
   }
 
-
   .bottom-btn {
     width: 131px;
     height: 47px;
     border: none;
-    background-color: #DD0000;
+    background-color: #dd0000;
     border-radius: 5px;
     color: white;
     font-weight: 400;
@@ -832,8 +842,3 @@ footer a {
     margin: 5px 10px;
   }
 }
-
-
-
-
-
